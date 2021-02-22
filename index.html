@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <title>La &Ntilde;apa</title>
+</head>
+<body>
+    <!-- Video Source -->
+    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">LA &Ntilde;APA</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="./videos/video_hornear2.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Las mejores empanadas </h2> 
+      <h3>Explorando Sabores</h3>
+      <p>Empanadas hechas con los mejores ingredientes y ese toque casero que solo mam&aacute; lo sabe hacer.</p>
+      <a href="empanadas.html">Explorar</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/EmapanadasLaNapa" target="_blank"><img src="./icons/social_media/facebook.png"></a></li>
+      <li><a href="https://www.instagram.com/empanadaslanapa/" target="_blank"><img src="./icons/social_media/instagram.png"></a></li>
+      <li><a href="#"><img src="./icons/social_media/whatsapp.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>      
+      <li><a href="empanadas.html">Rellenos</a></li>
+      <li><a href="contactanos.html">Cont&aacute;ctanos</a></li>
+    </ul>
+  </div>
+  <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+  </script>
+</body>
+</html>

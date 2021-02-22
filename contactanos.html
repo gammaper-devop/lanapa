@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c35a51423.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./style/style_contactanos.css">
+    <link rel="stylesheet" href="./style/bootstrap5/css/bootstrap.css">
+    <title>La &Ntilde;apa</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+          <h2 class="logo">LA &Ntilde;APA</h2>
+          <div class="toggle"></div>
+        </header>        
+        <div class="container">
+            <div class="contact-info">
+                <h1>Cont&aacute;ctanos</h1>
+                <i class="material-icons">phone</i>
+                <span>073 - 348843</span> <br>
+                <i class="material-icons">celular</i>
+                <span>968 085 056</span> <br>
+                <i class="material-icons">email</i>
+                <span>pedidos@lanapa.com</span>
+                <div class="social">
+                    <i id="social-icon" class="fa fa-facebook"></i>
+                    <i id="social-icon" class="fa fa-instagram"></i>
+                    <i id="social-icon" class="fa fa-whatsapp"></i>
+                </div>
+            </div>
+    
+            <div class="contact">
+                <h1 class="heading">Enviar Mensaje</h1>
+                <form action="">
+                    <span class="inputbox">
+                        <input type="text" required>
+                        <span class="inputname">Nombre</span>
+                    </span>
+    
+                    <span class="inputbox">
+                        <input type="text" required>
+                        <span class="inputname">Apellido</span>
+                    </span>
+    
+                    <span class="inputbox">
+                        <input type="text" required>
+                        <span class="inputname">Correo electronico</span>
+                    </span>
+    
+                    <span class="inputbox">
+                        <input type="text" required>
+                        <span class="inputname">Numero de contacto</span>
+                    </span>
+    
+                    <span class="inputbox">
+                        <textarea name="" id="" cols="30" rows="3" required></textarea>
+                        <span class="textname">Escribe un mensaje aqu&iacute;</span>
+                    </span><br>
+                    <input type="submit" class="submit">
+                </form>
+            </div>    
+        </div>
+        
+    </section>
+
+    <div class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>      
+          <li><a href="empanadas.html">Rellenos</a></li>
+          <li><a href="contactanos.html">Cont&aacute;ctanos</a></li>
+        </ul>
+      </div>
+      <script>
+          const menuToggle = document.querySelector('.toggle');
+          const showcase = document.querySelector('.showcase');
+    
+          menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                showcase.classList.toggle('active');
+            })
+      </script>
+</body>
+</html>
